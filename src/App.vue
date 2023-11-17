@@ -1,26 +1,56 @@
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- 主内容区 -->
+    <main>
+      <router-view></router-view>
+      <video-stream @prediction-made="handlePrediction" />
+      <prediction-results :results="predictionResults" />
+    </main>
+
+    <!-- 可选的页脚 -->
+    <footer>
+      <p>© 2023 Hangzhou City University</p>
+    </footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue';
+import VideoStream from "@/components/VideoStream.vue";
+import PredictionResults from "@/components/PredictionResults.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    PredictionResults,
+    VideoStream
+  },
+  setup() {
+    // 声明响应式数据
+    const predictionResults = ref([]);
+
+    // 事件处理函数
+    const handlePrediction = (data) => {
+      predictionResults.value = [data]; // 假设我们只处理最新的预测结果
+    };
+
+    // 暴露给模板的响应式数据和函数
+    return {
+      predictionResults,
+      handlePrediction
+    };
+  },
+};
 </script>
 
 <style>
+/* 在这里编写全局 CSS */
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
+
+/* 其他样式... */
 </style>
+
+

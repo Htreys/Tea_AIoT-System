@@ -27,10 +27,6 @@ const captureAndSendFrame = () => {
       const formData = new FormData();
       formData.append('frame', blob);
       axios.post('http://127.0.0.1:5000/api/predict', formData)
-          // .then(response => {
-          //   console.log('预测结果:', response.data);
-          //   // 这里可以根据返回的数据更新UI或执行其他操作
-          // })
           .then(response => {
             // 触发自定义事件并传递结果数据
             emit('prediction-made', response.data);

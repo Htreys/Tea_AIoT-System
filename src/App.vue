@@ -2,6 +2,7 @@
   <div id="app">
     <!-- 主内容区 -->
     <main>
+      <top-bar></top-bar>
       <router-view></router-view>
       <video-stream @prediction-made="handlePrediction" />
       <prediction-results :results="predictionResults" />
@@ -18,10 +19,12 @@
 import { ref } from 'vue';
 import VideoStream from "@/components/VideoStream.vue";
 import PredictionResults from "@/components/PredictionResults.vue";
+import TopBar from './components/TopBar.vue';
 
 export default {
   name: 'App',
   components: {
+    TopBar,
     PredictionResults,
     VideoStream
   },

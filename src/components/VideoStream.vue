@@ -65,16 +65,12 @@ onUnmounted(() => {
 });
 </script>
 
+/* VideoStream.vue */
 <style scoped>
-.video-container {
-  width: 100%;
-  height: auto;
-  background: black;
-}
-
-video {
-  width: 100%;
-  height: auto;
+.video-container video {
+  width: 100%; /* 视频宽度100% */
+  max-height: 60vh; /* 限制视频的最大高度，避免被裁切 */
+  object-fit: contain; /* 视频会被缩放以适应容器尺寸，但不会被裁切 */
 }
 </style>
 

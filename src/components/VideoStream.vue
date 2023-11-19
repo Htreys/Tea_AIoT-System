@@ -67,6 +67,7 @@ onUnmounted(() => {
 
 /* VideoStream.vue */
 <style scoped>
+
 .video-container video {
   width: 100%; /* 视频宽度100% */
   max-height: 60vh; /* 限制视频的最大高度，避免被裁切 */

@@ -27,10 +27,6 @@ const captureAndSendFrame = () => {
       const formData = new FormData();
       formData.append('frame', blob);
       axios.post('http://127.0.0.1:5000/api/predict', formData)
-          // .then(response => {
-          //   console.log('预测结果:', response.data);
-          //   // 这里可以根据返回的数据更新UI或执行其他操作
-          // })
           .then(response => {
             // 触发自定义事件并传递结果数据
             emit('prediction-made', response.data);
@@ -69,16 +65,13 @@ onUnmounted(() => {
 });
 </script>
 
+/* VideoStream.vue */
 <style scoped>
-.video-container {
-  width: 100%;
-  height: auto;
-  background: black;
-}
 
-video {
-  width: 100%;
-  height: auto;
+.video-container video {
+  width: 100%; /* 视频宽度100% */
+  max-height: 60vh; /* 限制视频的最大高度，避免被裁切 */
+  object-fit: contain; /* 视频会被缩放以适应容器尺寸，但不会被裁切 */
 }
 </style>
 

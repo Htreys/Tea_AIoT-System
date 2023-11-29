@@ -7,14 +7,14 @@
 
       <current-time class="timestamp"></current-time>
       <video-stream @prediction-made="handlePrediction"></video-stream>
-
+      <historical-data-chart/>
       <prediction-results :results="predictionResults" />
     </main>
 
     <!-- 可选的页脚 -->
-    <footer>
-      <p>© 2023 Hangzhou City University</p>
-    </footer>
+<!--    <footer>-->
+<!--      <p>© 2023 Hangzhou City University</p>-->
+<!--    </footer>-->
   </div>
 </template>
 
@@ -24,14 +24,17 @@ import CurrentTime from '@/components/CurrentTime.vue';
 import VideoStream from "@/components/VideoStream.vue";
 import PredictionResults from "@/components/PredictionResults.vue";
 import TopBar from './components/TopBar.vue';
+import HistoricalDataChart from "@/components/HistoricalDataChart.vue";
 
 export default {
   name: 'App',
   components: {
+    HistoricalDataChart,
     CurrentTime,
     TopBar,
     PredictionResults,
     VideoStream
+
   },
   setup() {
     // 声明响应式数据
@@ -71,6 +74,7 @@ body::before {
   pointer-events: none; /* 防止伪元素阻挡鼠标事件 */
   z-index: -1; /* 确保背景在最底层 */
 }
+
 prediction-results {
   background: none; /* 或者使用具体的透明背景颜色 */
 }

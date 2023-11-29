@@ -52,3 +52,21 @@
 ### （3）项目架构图
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/32406294/1698986531184-70396849-3c61-4b20-933f-6d0d6ac73a6c.png#averageHue=%23f9f9f9&clientId=ubebba161-f927-4&from=paste&height=709&id=ubffe8e35&originHeight=1241&originWidth=1644&originalType=binary&ratio=1.75&rotation=0&showTitle=false&size=115487&status=done&style=none&taskId=ud215ef7f-8ac0-4feb-9bda-d261beaf84d&title=&width=939.4285714285714)
 
+## 效果展示及描述
+展示页面效果图：<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/32406294/1699006690159-b7107c03-77c8-4ba6-8275-f3ebf55710a2.png#averageHue=%232f3a4b&clientId=ud024216f-1a6d-4&from=paste&height=617&id=u7ca14c0a&originHeight=1080&originWidth=1821&originalType=binary&ratio=1.75&rotation=0&showTitle=false&size=1915669&status=done&style=none&taskId=u733bb92d-d46a-4715-b6c6-035888ed373&title=&width=1040.5714285714287)
+1. **实时视频流展示区域**：
+   - 视频播放器的位置显著，用户能够轻松查看实时图像。
+   - 视频可以提供非常直观的用户体验。
+2. **预测结果区域**：
+   - “bird eye spot”旁边的百分比数值（78.766%）清晰展示了模型对于当前图像的预测结果和置信度，对于用户了解茶叶病害情况很有帮助。
+3. **参数展示区域**：
+   - 提供了调整摄像头设置的滑块（如分辨率和帧率），这让用户可以根据需要调整，非常贴心。
+   - 显示计时器，可能是表示从监测开始到当前的时间，这样的实时数据对于监控来说非常有用。
+4. **病害识别指标条**：
+   - 以条形图的形式展示各种病害的发生次数，用户可以一目了然地看出哪种病害的发生的可能性最高，并及时做出决策来杜绝病害。
+5. **整体风格和布局**：
+   - 界面风格统一，蓝黑色基调符合工业和技术应用的通常设计。
+   - 布局合理，各功能区的分布均衡，遵循了“F”形阅读规律。
+6. **界面风格**：
+   - 确保了界面的响应性，以便在不同尺寸的屏幕和设备上都有良好的显示效果。
+   - 考虑用户操作的流程，确保从用户角度出发，简化操作步骤，提升用户体验。

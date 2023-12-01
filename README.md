@@ -50,7 +50,8 @@
    - 当检测到严重的病虫害时，通过MQTT协议发送报警消息，及时通知用户。
 通过这套技术栈和技术设计，项目实现了茶叶病虫害的实时监测和分类识别，提供了直观的前端展示界面，并具备数据存储和分析的能力，为用户提供了一个全面、高效、易用的病虫害监测解决方案。
 ### （3）项目架构图
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/32406294/1698986531184-70396849-3c61-4b20-933f-6d0d6ac73a6c.png#averageHue=%23f9f9f9&clientId=ubebba161-f927-4&from=paste&height=709&id=ubffe8e35&originHeight=1241&originWidth=1644&originalType=binary&ratio=1.75&rotation=0&showTitle=false&size=115487&status=done&style=none&taskId=ud215ef7f-8ac0-4feb-9bda-d261beaf84d&title=&width=939.4285714285714)
+![Uploading image.png…]()
+
 
 ## 效果展示及描述
 展示页面效果图：<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/32406294/1699006690159-b7107c03-77c8-4ba6-8275-f3ebf55710a2.png#averageHue=%232f3a4b&clientId=ud024216f-1a6d-4&from=paste&height=617&id=u7ca14c0a&originHeight=1080&originWidth=1821&originalType=binary&ratio=1.75&rotation=0&showTitle=false&size=1915669&status=done&style=none&taskId=u733bb92d-d46a-4715-b6c6-035888ed373&title=&width=1040.5714285714287)
